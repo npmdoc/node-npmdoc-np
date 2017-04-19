@@ -47,12 +47,21 @@
 }
 </style>
 <h1>api documentation for
-    <a href="https://github.com/sindresorhus/np#readme">np (v2.13.1)</a>
+    <a href="https://github.com/sindresorhus/np#readme">np (v2.13.2)</a>
 </h1>
 <h4>A better `npm publish`</h4>
 <div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.np">module np</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.np.np">
+            function <span class="apidocSignatureSpan"></span>np
+            <span class="apidocSignatureSpan">(input, opts)</span>
+            </a>
+
+        </li>
 
         <li>
 
@@ -157,6 +166,106 @@
 <h1><a href="#apidoc.module.np" id="apidoc.module.np">module np</a></h1>
 
 
+    <h2>
+        <a href="#apidoc.element.np.np" id="apidoc.element.np.np">
+        function <span class="apidocSignatureSpan"></span>np
+        <span class="apidocSignatureSpan">(input, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(input, opts) =&gt; {
+	input = input || 'patch';
+
+	opts = Object.assign({
+		cleanup: true,
+		publish: true,
+		yarn: hasYarn()
+	}, opts);
+
+	if (!hasYarn() &amp;&amp; opts.yarn) {
+		throw new Error('Could not use Yarn without yarn.lock file');
+	}
+
+	// TODO: remove sometime far in the future
+	if (opts.skipCleanup) {
+		opts.cleanup = false;
+	}
+
+	const runTests = !opts.yolo;
+	const runCleanup = opts.cleanup &amp;&amp; !opts.yolo;
+	const runPublish = opts.publish;
+	const pkg = util.readPkg();
+
+	const tasks = new Listr([
+		{
+			title: 'Prerequisite check',
+			task: () =&gt; prerequisiteTasks(input, pkg, opts)
+		},
+		{
+			title: 'Git',
+			task: () =&gt; gitTasks(opts)
+		}
+	], {
+		showSubtasks: false
+	});
+
+	if (runCleanup) {
+		tasks.add([
+			{
+				title: 'Cleanup',
+				task: () =&gt; del('node_modules')
+			},
+			{
+				title: 'Installing dependencies using Yarn',
+				enabled: () =&gt; opts.yarn === true,
+				task: () =&gt; exec('yarn', ['install'])
+			},
+			{
+				title: 'Installing dependencies using npm',
+				enabled: () =&gt; opts.yarn === false,
+				task: () =&gt; exec('npm', ['install'])
+			}
+		]);
+	}
+
+	if (runTests) {
+		tasks.add({
+			title: 'Running tests',
+			task: () =&gt; exec('npm', ['test'])
+		});
+	}
+
+	tasks.add({
+		title: 'Bumping version',
+		task: () =&gt; exec('npm', ['version', input])
+	});
+
+	if (runPublish) {
+		tasks.add({
+			title: 'Publishing package',
+			skip: () =&gt; {
+				if (pkg.private) {
+					return 'Private package: not publishing to npm.';
+				}
+			},
+			task: () =&gt; exec('npm', ['publish'].concat(opts.tag ? ['--tag', opts.tag] : []))
+		});
+	}
+
+	tasks.add({
+		title: 'Pushing tags',
+		task: () =&gt; exec('git', ['push', '--follow-tags'])
+	});
+
+	return tasks.run()
+		.then(() =&gt; readPkgUp())
+		.then(result =&gt; result.pkg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
 
 
 
@@ -252,12 +361,12 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">version =&gt; exports.PRERELEASE_VERSIONS.indexOf(version) !== -1 || Boolean(semver.prerelease(version))</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-					throw new Error(`New version \`${newVersion}\` should be higher than current version \`${pkg.version}\``);
 				}
 			}
 		},
 		{
 			title: 'Check for pre-release version',
+			enabled: () =&gt; opts.publish,
 			task: () =&gt; {
 				if (!pkg.private &amp;&amp; version.<span class="apidocCodeKeywordSpan">isPrereleaseVersion</span>(newVersion) &amp;&amp;
 ; !opts.tag) {
@@ -332,7 +441,7 @@ module.exports = (input, pkg, opts) =&gt; {
 		},
 		{
 			title: 'Check for pre-release version',
-			task: () =&gt; {
+			enabled: () =&gt; opts.publish,
 ...</pre></li>
     </ul>
 

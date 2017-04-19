@@ -1,207 +1,209 @@
-<svg height="3262" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="3262" fill="#555" width="720"></rect>
+<svg height="3294" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="3294" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">29 megabytes</tspan>
-<tspan x="10" y="42">└─┬ np@2.13.1 </tspan>
-<tspan x="10" y="58">  ├── any-observable@0.2.0 </tspan>
-<tspan x="10" y="74">  ├─┬ chalk@1.1.3 </tspan>
-<tspan x="10" y="90">  │ ├── ansi-styles@2.2.1 </tspan>
-<tspan x="10" y="106">  │ ├── escape-string-regexp@1.0.5 </tspan>
-<tspan x="10" y="122">  │ ├─┬ has-ansi@2.0.0 </tspan>
-<tspan x="10" y="138">  │ │ └── ansi-regex@2.1.1 </tspan>
-<tspan x="10" y="154">  │ ├── strip-ansi@3.0.1 </tspan>
-<tspan x="10" y="170">  │ └── supports-color@2.0.0 </tspan>
-<tspan x="10" y="186">  ├─┬ del@2.2.2 </tspan>
-<tspan x="10" y="202">  │ ├─┬ globby@5.0.0 </tspan>
-<tspan x="10" y="218">  │ │ ├─┬ array-union@1.0.2 </tspan>
-<tspan x="10" y="234">  │ │ │ └── array-uniq@1.0.3 </tspan>
-<tspan x="10" y="250">  │ │ ├── arrify@1.0.1 </tspan>
-<tspan x="10" y="266">  │ │ └─┬ glob@7.1.1 </tspan>
-<tspan x="10" y="282">  │ │   ├── fs.realpath@1.0.0 </tspan>
-<tspan x="10" y="298">  │ │   ├─┬ inflight@1.0.6 </tspan>
-<tspan x="10" y="314">  │ │   │ └── wrappy@1.0.2 </tspan>
-<tspan x="10" y="330">  │ │   ├── inherits@2.0.3 </tspan>
-<tspan x="10" y="346">  │ │   ├─┬ minimatch@3.0.3 </tspan>
-<tspan x="10" y="362">  │ │   │ └─┬ brace-expansion@1.1.6 </tspan>
-<tspan x="10" y="378">  │ │   │   ├── balanced-match@0.4.2 </tspan>
-<tspan x="10" y="394">  │ │   │   └── concat-map@0.0.1 </tspan>
-<tspan x="10" y="410">  │ │   ├── once@1.4.0 </tspan>
-<tspan x="10" y="426">  │ │   └── path-is-absolute@1.0.1 </tspan>
-<tspan x="10" y="442">  │ ├── is-path-cwd@1.0.0 </tspan>
-<tspan x="10" y="458">  │ ├─┬ is-path-in-cwd@1.0.0 </tspan>
-<tspan x="10" y="474">  │ │ └─┬ is-path-inside@1.0.0 </tspan>
-<tspan x="10" y="490">  │ │   └── path-is-inside@1.0.2 </tspan>
-<tspan x="10" y="506">  │ ├── object-assign@4.1.1 </tspan>
-<tspan x="10" y="522">  │ ├── pify@2.3.0 </tspan>
-<tspan x="10" y="538">  │ ├─┬ pinkie-promise@2.0.1 </tspan>
-<tspan x="10" y="554">  │ │ └── pinkie@2.0.4 </tspan>
-<tspan x="10" y="570">  │ └── rimraf@2.6.1 </tspan>
-<tspan x="10" y="586">  ├─┬ execa@0.6.3 </tspan>
-<tspan x="10" y="602">  │ ├─┬ cross-spawn@5.1.0 </tspan>
-<tspan x="10" y="618">  │ │ ├─┬ lru-cache@4.0.2 </tspan>
-<tspan x="10" y="634">  │ │ │ ├── pseudomap@1.0.2 </tspan>
-<tspan x="10" y="650">  │ │ │ └── yallist@2.1.2 </tspan>
-<tspan x="10" y="666">  │ │ ├─┬ shebang-command@1.2.0 </tspan>
-<tspan x="10" y="682">  │ │ │ └── shebang-regex@1.0.0 </tspan>
-<tspan x="10" y="698">  │ │ └─┬ which@1.2.14 </tspan>
-<tspan x="10" y="714">  │ │   └── isexe@2.0.0 </tspan>
-<tspan x="10" y="730">  │ ├── get-stream@3.0.0 </tspan>
-<tspan x="10" y="746">  │ ├── is-stream@1.1.0 </tspan>
-<tspan x="10" y="762">  │ ├─┬ npm-run-path@2.0.2 </tspan>
-<tspan x="10" y="778">  │ │ └── path-key@2.0.1 </tspan>
-<tspan x="10" y="794">  │ ├── p-finally@1.0.0 </tspan>
-<tspan x="10" y="810">  │ ├── signal-exit@3.0.2 </tspan>
-<tspan x="10" y="826">  │ └── strip-eof@1.0.0 </tspan>
-<tspan x="10" y="842">  ├── has-yarn@1.0.0 </tspan>
-<tspan x="10" y="858">  ├─┬ inquirer@3.0.6 </tspan>
-<tspan x="10" y="874">  │ ├── ansi-escapes@1.4.0 </tspan>
-<tspan x="10" y="890">  │ ├─┬ cli-cursor@2.1.0 </tspan>
-<tspan x="10" y="906">  │ │ └─┬ restore-cursor@2.0.0 </tspan>
-<tspan x="10" y="922">  │ │   └─┬ onetime@2.0.1 </tspan>
-<tspan x="10" y="938">  │ │     └── mimic-fn@1.1.0 </tspan>
-<tspan x="10" y="954">  │ ├── cli-width@2.1.0 </tspan>
-<tspan x="10" y="970">  │ ├─┬ external-editor@2.0.1 </tspan>
-<tspan x="10" y="986">  │ │ └─┬ tmp@0.0.31 </tspan>
-<tspan x="10" y="1002">  │ │   └── os-tmpdir@1.0.2 </tspan>
-<tspan x="10" y="1018">  │ ├── figures@2.0.0 </tspan>
-<tspan x="10" y="1034">  │ ├── lodash@4.17.4 </tspan>
-<tspan x="10" y="1050">  │ ├── mute-stream@0.0.7 </tspan>
-<tspan x="10" y="1066">  │ ├── run-async@2.3.0 </tspan>
-<tspan x="10" y="1082">  │ ├── rx@4.1.0 </tspan>
-<tspan x="10" y="1098">  │ ├─┬ string-width@2.0.0 </tspan>
-<tspan x="10" y="1114">  │ │ └── is-fullwidth-code-point@2.0.0 </tspan>
-<tspan x="10" y="1130">  │ └── through@2.3.8 </tspan>
-<tspan x="10" y="1146">  ├─┬ listr@0.11.0 </tspan>
-<tspan x="10" y="1162">  │ ├─┬ cli-truncate@0.2.1 </tspan>
-<tspan x="10" y="1178">  │ │ ├── slice-ansi@0.0.4 </tspan>
-<tspan x="10" y="1194">  │ │ └─┬ string-width@1.0.2 </tspan>
-<tspan x="10" y="1210">  │ │   ├── code-point-at@1.1.0 </tspan>
-<tspan x="10" y="1226">  │ │   └─┬ is-fullwidth-code-point@1.0.0 </tspan>
-<tspan x="10" y="1242">  │ │     └── number-is-nan@1.0.1 </tspan>
-<tspan x="10" y="1258">  │ ├── figures@1.7.0 </tspan>
-<tspan x="10" y="1274">  │ ├─┬ indent-string@2.1.0 </tspan>
-<tspan x="10" y="1290">  │ │ └─┬ repeating@2.0.1 </tspan>
-<tspan x="10" y="1306">  │ │   └── is-finite@1.0.2 </tspan>
-<tspan x="10" y="1322">  │ ├── is-promise@2.1.0 </tspan>
-<tspan x="10" y="1338">  │ ├── listr-silent-renderer@1.1.1 </tspan>
-<tspan x="10" y="1354">  │ ├─┬ listr-update-renderer@0.2.0 </tspan>
-<tspan x="10" y="1370">  │ │ ├── elegant-spinner@1.0.1 </tspan>
-<tspan x="10" y="1386">  │ │ ├── figures@1.7.0 </tspan>
-<tspan x="10" y="1402">  │ │ └── indent-string@3.1.0 </tspan>
-<tspan x="10" y="1418">  │ ├─┬ listr-verbose-renderer@0.4.0 </tspan>
-<tspan x="10" y="1434">  │ │ ├─┬ cli-cursor@1.0.2 </tspan>
-<tspan x="10" y="1450">  │ │ │ └─┬ restore-cursor@1.0.1 </tspan>
-<tspan x="10" y="1466">  │ │ │   ├── exit-hook@1.1.1 </tspan>
-<tspan x="10" y="1482">  │ │ │   └── onetime@1.1.0 </tspan>
-<tspan x="10" y="1498">  │ │ ├── date-fns@1.28.2 </tspan>
-<tspan x="10" y="1514">  │ │ └── figures@1.7.0 </tspan>
-<tspan x="10" y="1530">  │ ├─┬ log-update@1.0.2 </tspan>
-<tspan x="10" y="1546">  │ │ └─┬ cli-cursor@1.0.2 </tspan>
-<tspan x="10" y="1562">  │ │   └─┬ restore-cursor@1.0.1 </tspan>
-<tspan x="10" y="1578">  │ │     └── onetime@1.1.0 </tspan>
-<tspan x="10" y="1594">  │ ├─┬ ora@0.2.3 </tspan>
-<tspan x="10" y="1610">  │ │ ├─┬ cli-cursor@1.0.2 </tspan>
-<tspan x="10" y="1626">  │ │ │ └─┬ restore-cursor@1.0.1 </tspan>
-<tspan x="10" y="1642">  │ │ │   └── onetime@1.1.0 </tspan>
-<tspan x="10" y="1658">  │ │ └── cli-spinners@0.1.2 </tspan>
-<tspan x="10" y="1674">  │ └── stream-to-observable@0.1.0 </tspan>
-<tspan x="10" y="1690">  ├── log-symbols@1.0.2 </tspan>
-<tspan x="10" y="1706">  ├─┬ meow@3.7.0 </tspan>
-<tspan x="10" y="1722">  │ ├─┬ camelcase-keys@2.1.0 </tspan>
-<tspan x="10" y="1738">  │ │ └── camelcase@2.1.1 </tspan>
-<tspan x="10" y="1754">  │ ├── decamelize@1.2.0 </tspan>
-<tspan x="10" y="1770">  │ ├─┬ loud-rejection@1.6.0 </tspan>
-<tspan x="10" y="1786">  │ │ └─┬ currently-unhandled@0.4.1 </tspan>
-<tspan x="10" y="1802">  │ │   └── array-find-index@1.0.2 </tspan>
-<tspan x="10" y="1818">  │ ├── map-obj@1.0.1 </tspan>
-<tspan x="10" y="1834">  │ ├── minimist@1.2.0 </tspan>
-<tspan x="10" y="1850">  │ ├─┬ normalize-package-data@2.3.6 </tspan>
-<tspan x="10" y="1866">  │ │ ├── hosted-git-info@2.4.1 </tspan>
-<tspan x="10" y="1882">  │ │ ├─┬ is-builtin-module@1.0.0 </tspan>
-<tspan x="10" y="1898">  │ │ │ └── builtin-modules@1.1.1 </tspan>
-<tspan x="10" y="1914">  │ │ └─┬ validate-npm-package-license@3.0.1 </tspan>
-<tspan x="10" y="1930">  │ │   ├─┬ spdx-correct@1.0.2 </tspan>
-<tspan x="10" y="1946">  │ │   │ └── spdx-license-ids@1.2.2 </tspan>
-<tspan x="10" y="1962">  │ │   └── spdx-expression-parse@1.0.4 </tspan>
-<tspan x="10" y="1978">  │ ├─┬ read-pkg-up@1.0.1 </tspan>
-<tspan x="10" y="1994">  │ │ ├─┬ find-up@1.1.2 </tspan>
-<tspan x="10" y="2010">  │ │ │ └── path-exists@2.1.0 </tspan>
-<tspan x="10" y="2026">  │ │ └─┬ read-pkg@1.1.0 </tspan>
-<tspan x="10" y="2042">  │ │   ├─┬ load-json-file@1.1.0 </tspan>
-<tspan x="10" y="2058">  │ │   │ └─┬ strip-bom@2.0.0 </tspan>
-<tspan x="10" y="2074">  │ │   │   └── is-utf8@0.2.1 </tspan>
-<tspan x="10" y="2090">  │ │   └── path-type@1.1.0 </tspan>
-<tspan x="10" y="2106">  │ ├─┬ redent@1.0.0 </tspan>
-<tspan x="10" y="2122">  │ │ └─┬ strip-indent@1.0.1 </tspan>
-<tspan x="10" y="2138">  │ │   └── get-stdin@4.0.1 </tspan>
-<tspan x="10" y="2154">  │ └── trim-newlines@1.0.0 </tspan>
-<tspan x="10" y="2170">  ├─┬ read-pkg-up@2.0.0 </tspan>
-<tspan x="10" y="2186">  │ ├─┬ find-up@2.1.0 </tspan>
-<tspan x="10" y="2202">  │ │ └─┬ locate-path@2.0.0 </tspan>
-<tspan x="10" y="2218">  │ │   ├─┬ p-locate@2.0.0 </tspan>
-<tspan x="10" y="2234">  │ │   │ └── p-limit@1.1.0 </tspan>
-<tspan x="10" y="2250">  │ │   └── path-exists@3.0.0 </tspan>
-<tspan x="10" y="2266">  │ └─┬ read-pkg@2.0.0 </tspan>
-<tspan x="10" y="2282">  │   ├─┬ load-json-file@2.0.0 </tspan>
-<tspan x="10" y="2298">  │   │ ├─┬ parse-json@2.2.0 </tspan>
-<tspan x="10" y="2314">  │   │ │ └─┬ error-ex@1.3.1 </tspan>
-<tspan x="10" y="2330">  │   │ │   └── is-arrayish@0.2.1 </tspan>
-<tspan x="10" y="2346">  │   │ └── strip-bom@3.0.0 </tspan>
-<tspan x="10" y="2362">  │   └── path-type@2.0.0 </tspan>
-<tspan x="10" y="2378">  ├─┬ rxjs@5.3.0 </tspan>
-<tspan x="10" y="2394">  │ └── symbol-observable@1.0.4 </tspan>
-<tspan x="10" y="2410">  ├── semver@5.3.0 </tspan>
-<tspan x="10" y="2426">  ├── split@1.0.0 </tspan>
-<tspan x="10" y="2442">  ├── stream-to-observable@0.2.0 </tspan>
-<tspan x="10" y="2458">  └─┬ update-notifier@2.1.0 </tspan>
-<tspan x="10" y="2474">    ├─┬ boxen@1.0.0 </tspan>
-<tspan x="10" y="2490">    │ ├─┬ ansi-align@1.1.0 </tspan>
-<tspan x="10" y="2506">    │ │ └─┬ string-width@1.0.2 </tspan>
-<tspan x="10" y="2522">    │ │   └── is-fullwidth-code-point@1.0.0 </tspan>
-<tspan x="10" y="2538">    │ ├── camelcase@4.1.0 </tspan>
-<tspan x="10" y="2554">    │ ├── cli-boxes@1.0.0 </tspan>
-<tspan x="10" y="2570">    │ ├─┬ term-size@0.1.1 </tspan>
-<tspan x="10" y="2586">    │ │ └─┬ execa@0.4.0 </tspan>
-<tspan x="10" y="2602">    │ │   ├── cross-spawn-async@2.2.5 </tspan>
-<tspan x="10" y="2618">    │ │   ├── npm-run-path@1.0.0 </tspan>
-<tspan x="10" y="2634">    │ │   └── path-key@1.0.0 </tspan>
-<tspan x="10" y="2650">    │ └─┬ widest-line@1.0.0 </tspan>
-<tspan x="10" y="2666">    │   └─┬ string-width@1.0.2 </tspan>
-<tspan x="10" y="2682">    │     └── is-fullwidth-code-point@1.0.0 </tspan>
-<tspan x="10" y="2698">    ├─┬ configstore@3.0.0 </tspan>
-<tspan x="10" y="2714">    │ ├─┬ dot-prop@4.1.1 </tspan>
-<tspan x="10" y="2730">    │ │ └── is-obj@1.0.1 </tspan>
-<tspan x="10" y="2746">    │ ├── graceful-fs@4.1.11 </tspan>
-<tspan x="10" y="2762">    │ ├─┬ mkdirp@0.5.1 </tspan>
-<tspan x="10" y="2778">    │ │ └── minimist@0.0.8 </tspan>
-<tspan x="10" y="2794">    │ ├─┬ unique-string@1.0.0 </tspan>
-<tspan x="10" y="2810">    │ │ └── crypto-random-string@1.0.0 </tspan>
-<tspan x="10" y="2826">    │ └─┬ write-file-atomic@1.3.1 </tspan>
-<tspan x="10" y="2842">    │   ├── imurmurhash@0.1.4 </tspan>
-<tspan x="10" y="2858">    │   └── slide@1.1.6 </tspan>
-<tspan x="10" y="2874">    ├── is-npm@1.0.0 </tspan>
-<tspan x="10" y="2890">    ├─┬ latest-version@3.1.0 </tspan>
-<tspan x="10" y="2906">    │ └─┬ package-json@4.0.0 </tspan>
-<tspan x="10" y="2922">    │   ├─┬ got@6.7.1 </tspan>
-<tspan x="10" y="2938">    │   │ ├─┬ create-error-class@3.0.2 </tspan>
-<tspan x="10" y="2954">    │   │ │ └── capture-stack-trace@1.0.0 </tspan>
-<tspan x="10" y="2970">    │   │ ├── duplexer3@0.1.4 </tspan>
-<tspan x="10" y="2986">    │   │ ├── is-redirect@1.0.0 </tspan>
-<tspan x="10" y="3002">    │   │ ├── is-retry-allowed@1.1.0 </tspan>
-<tspan x="10" y="3018">    │   │ ├── lowercase-keys@1.0.0 </tspan>
-<tspan x="10" y="3034">    │   │ ├── safe-buffer@5.0.1 </tspan>
-<tspan x="10" y="3050">    │   │ ├── timed-out@4.0.1 </tspan>
-<tspan x="10" y="3066">    │   │ ├── unzip-response@2.0.1 </tspan>
-<tspan x="10" y="3082">    │   │ └─┬ url-parse-lax@1.0.0 </tspan>
-<tspan x="10" y="3098">    │   │   └── prepend-http@1.0.4 </tspan>
-<tspan x="10" y="3114">    │   ├─┬ registry-auth-token@3.1.1 </tspan>
-<tspan x="10" y="3130">    │   │ └─┬ rc@1.2.1 </tspan>
-<tspan x="10" y="3146">    │   │   ├── deep-extend@0.4.1 </tspan>
-<tspan x="10" y="3162">    │   │   ├── ini@1.3.4 </tspan>
-<tspan x="10" y="3178">    │   │   └── strip-json-comments@2.0.1 </tspan>
-<tspan x="10" y="3194">    │   └── registry-url@3.1.0 </tspan>
-<tspan x="10" y="3210">    ├── lazy-req@2.0.0 </tspan>
-<tspan x="10" y="3226">    ├── semver-diff@2.1.0 </tspan>
-<tspan x="10" y="3242">    └── xdg-basedir@3.0.0</tspan>
+<tspan x="10" y="26">29 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ np@2.13.2 </tspan>
+<tspan x="10" y="90">  ├── any-observable@0.2.0 </tspan>
+<tspan x="10" y="106">  ├─┬ chalk@1.1.3 </tspan>
+<tspan x="10" y="122">  │ ├── ansi-styles@2.2.1 </tspan>
+<tspan x="10" y="138">  │ ├── escape-string-regexp@1.0.5 </tspan>
+<tspan x="10" y="154">  │ ├─┬ has-ansi@2.0.0 </tspan>
+<tspan x="10" y="170">  │ │ └── ansi-regex@2.1.1 </tspan>
+<tspan x="10" y="186">  │ ├── strip-ansi@3.0.1 </tspan>
+<tspan x="10" y="202">  │ └── supports-color@2.0.0 </tspan>
+<tspan x="10" y="218">  ├─┬ del@2.2.2 </tspan>
+<tspan x="10" y="234">  │ ├─┬ globby@5.0.0 </tspan>
+<tspan x="10" y="250">  │ │ ├─┬ array-union@1.0.2 </tspan>
+<tspan x="10" y="266">  │ │ │ └── array-uniq@1.0.3 </tspan>
+<tspan x="10" y="282">  │ │ ├── arrify@1.0.1 </tspan>
+<tspan x="10" y="298">  │ │ └─┬ glob@7.1.1 </tspan>
+<tspan x="10" y="314">  │ │   ├── fs.realpath@1.0.0 </tspan>
+<tspan x="10" y="330">  │ │   ├─┬ inflight@1.0.6 </tspan>
+<tspan x="10" y="346">  │ │   │ └── wrappy@1.0.2 </tspan>
+<tspan x="10" y="362">  │ │   ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="378">  │ │   ├─┬ minimatch@3.0.3 </tspan>
+<tspan x="10" y="394">  │ │   │ └─┬ brace-expansion@1.1.7 </tspan>
+<tspan x="10" y="410">  │ │   │   ├── balanced-match@0.4.2 </tspan>
+<tspan x="10" y="426">  │ │   │   └── concat-map@0.0.1 </tspan>
+<tspan x="10" y="442">  │ │   ├── once@1.4.0 </tspan>
+<tspan x="10" y="458">  │ │   └── path-is-absolute@1.0.1 </tspan>
+<tspan x="10" y="474">  │ ├── is-path-cwd@1.0.0 </tspan>
+<tspan x="10" y="490">  │ ├─┬ is-path-in-cwd@1.0.0 </tspan>
+<tspan x="10" y="506">  │ │ └─┬ is-path-inside@1.0.0 </tspan>
+<tspan x="10" y="522">  │ │   └── path-is-inside@1.0.2 </tspan>
+<tspan x="10" y="538">  │ ├── object-assign@4.1.1 </tspan>
+<tspan x="10" y="554">  │ ├── pify@2.3.0 </tspan>
+<tspan x="10" y="570">  │ ├─┬ pinkie-promise@2.0.1 </tspan>
+<tspan x="10" y="586">  │ │ └── pinkie@2.0.4 </tspan>
+<tspan x="10" y="602">  │ └── rimraf@2.6.1 </tspan>
+<tspan x="10" y="618">  ├─┬ execa@0.6.3 </tspan>
+<tspan x="10" y="634">  │ ├─┬ cross-spawn@5.1.0 </tspan>
+<tspan x="10" y="650">  │ │ ├─┬ lru-cache@4.0.2 </tspan>
+<tspan x="10" y="666">  │ │ │ ├── pseudomap@1.0.2 </tspan>
+<tspan x="10" y="682">  │ │ │ └── yallist@2.1.2 </tspan>
+<tspan x="10" y="698">  │ │ ├─┬ shebang-command@1.2.0 </tspan>
+<tspan x="10" y="714">  │ │ │ └── shebang-regex@1.0.0 </tspan>
+<tspan x="10" y="730">  │ │ └─┬ which@1.2.14 </tspan>
+<tspan x="10" y="746">  │ │   └── isexe@2.0.0 </tspan>
+<tspan x="10" y="762">  │ ├── get-stream@3.0.0 </tspan>
+<tspan x="10" y="778">  │ ├── is-stream@1.1.0 </tspan>
+<tspan x="10" y="794">  │ ├─┬ npm-run-path@2.0.2 </tspan>
+<tspan x="10" y="810">  │ │ └── path-key@2.0.1 </tspan>
+<tspan x="10" y="826">  │ ├── p-finally@1.0.0 </tspan>
+<tspan x="10" y="842">  │ ├── signal-exit@3.0.2 </tspan>
+<tspan x="10" y="858">  │ └── strip-eof@1.0.0 </tspan>
+<tspan x="10" y="874">  ├── has-yarn@1.0.0 </tspan>
+<tspan x="10" y="890">  ├─┬ inquirer@3.0.6 </tspan>
+<tspan x="10" y="906">  │ ├── ansi-escapes@1.4.0 </tspan>
+<tspan x="10" y="922">  │ ├─┬ cli-cursor@2.1.0 </tspan>
+<tspan x="10" y="938">  │ │ └─┬ restore-cursor@2.0.0 </tspan>
+<tspan x="10" y="954">  │ │   └─┬ onetime@2.0.1 </tspan>
+<tspan x="10" y="970">  │ │     └── mimic-fn@1.1.0 </tspan>
+<tspan x="10" y="986">  │ ├── cli-width@2.1.0 </tspan>
+<tspan x="10" y="1002">  │ ├─┬ external-editor@2.0.1 </tspan>
+<tspan x="10" y="1018">  │ │ └─┬ tmp@0.0.31 </tspan>
+<tspan x="10" y="1034">  │ │   └── os-tmpdir@1.0.2 </tspan>
+<tspan x="10" y="1050">  │ ├── figures@2.0.0 </tspan>
+<tspan x="10" y="1066">  │ ├── lodash@4.17.4 </tspan>
+<tspan x="10" y="1082">  │ ├── mute-stream@0.0.7 </tspan>
+<tspan x="10" y="1098">  │ ├── run-async@2.3.0 </tspan>
+<tspan x="10" y="1114">  │ ├── rx@4.1.0 </tspan>
+<tspan x="10" y="1130">  │ ├─┬ string-width@2.0.0 </tspan>
+<tspan x="10" y="1146">  │ │ └── is-fullwidth-code-point@2.0.0 </tspan>
+<tspan x="10" y="1162">  │ └── through@2.3.8 </tspan>
+<tspan x="10" y="1178">  ├─┬ listr@0.11.0 </tspan>
+<tspan x="10" y="1194">  │ ├─┬ cli-truncate@0.2.1 </tspan>
+<tspan x="10" y="1210">  │ │ ├── slice-ansi@0.0.4 </tspan>
+<tspan x="10" y="1226">  │ │ └─┬ string-width@1.0.2 </tspan>
+<tspan x="10" y="1242">  │ │   ├── code-point-at@1.1.0 </tspan>
+<tspan x="10" y="1258">  │ │   └─┬ is-fullwidth-code-point@1.0.0 </tspan>
+<tspan x="10" y="1274">  │ │     └── number-is-nan@1.0.1 </tspan>
+<tspan x="10" y="1290">  │ ├── figures@1.7.0 </tspan>
+<tspan x="10" y="1306">  │ ├─┬ indent-string@2.1.0 </tspan>
+<tspan x="10" y="1322">  │ │ └─┬ repeating@2.0.1 </tspan>
+<tspan x="10" y="1338">  │ │   └── is-finite@1.0.2 </tspan>
+<tspan x="10" y="1354">  │ ├── is-promise@2.1.0 </tspan>
+<tspan x="10" y="1370">  │ ├── listr-silent-renderer@1.1.1 </tspan>
+<tspan x="10" y="1386">  │ ├─┬ listr-update-renderer@0.2.0 </tspan>
+<tspan x="10" y="1402">  │ │ ├── elegant-spinner@1.0.1 </tspan>
+<tspan x="10" y="1418">  │ │ ├── figures@1.7.0 </tspan>
+<tspan x="10" y="1434">  │ │ └── indent-string@3.1.0 </tspan>
+<tspan x="10" y="1450">  │ ├─┬ listr-verbose-renderer@0.4.0 </tspan>
+<tspan x="10" y="1466">  │ │ ├─┬ cli-cursor@1.0.2 </tspan>
+<tspan x="10" y="1482">  │ │ │ └─┬ restore-cursor@1.0.1 </tspan>
+<tspan x="10" y="1498">  │ │ │   ├── exit-hook@1.1.1 </tspan>
+<tspan x="10" y="1514">  │ │ │   └── onetime@1.1.0 </tspan>
+<tspan x="10" y="1530">  │ │ ├── date-fns@1.28.3 </tspan>
+<tspan x="10" y="1546">  │ │ └── figures@1.7.0 </tspan>
+<tspan x="10" y="1562">  │ ├─┬ log-update@1.0.2 </tspan>
+<tspan x="10" y="1578">  │ │ └─┬ cli-cursor@1.0.2 </tspan>
+<tspan x="10" y="1594">  │ │   └─┬ restore-cursor@1.0.1 </tspan>
+<tspan x="10" y="1610">  │ │     └── onetime@1.1.0 </tspan>
+<tspan x="10" y="1626">  │ ├─┬ ora@0.2.3 </tspan>
+<tspan x="10" y="1642">  │ │ ├─┬ cli-cursor@1.0.2 </tspan>
+<tspan x="10" y="1658">  │ │ │ └─┬ restore-cursor@1.0.1 </tspan>
+<tspan x="10" y="1674">  │ │ │   └── onetime@1.1.0 </tspan>
+<tspan x="10" y="1690">  │ │ └── cli-spinners@0.1.2 </tspan>
+<tspan x="10" y="1706">  │ └── stream-to-observable@0.1.0 </tspan>
+<tspan x="10" y="1722">  ├── log-symbols@1.0.2 </tspan>
+<tspan x="10" y="1738">  ├─┬ meow@3.7.0 </tspan>
+<tspan x="10" y="1754">  │ ├─┬ camelcase-keys@2.1.0 </tspan>
+<tspan x="10" y="1770">  │ │ └── camelcase@2.1.1 </tspan>
+<tspan x="10" y="1786">  │ ├── decamelize@1.2.0 </tspan>
+<tspan x="10" y="1802">  │ ├─┬ loud-rejection@1.6.0 </tspan>
+<tspan x="10" y="1818">  │ │ └─┬ currently-unhandled@0.4.1 </tspan>
+<tspan x="10" y="1834">  │ │   └── array-find-index@1.0.2 </tspan>
+<tspan x="10" y="1850">  │ ├── map-obj@1.0.1 </tspan>
+<tspan x="10" y="1866">  │ ├── minimist@1.2.0 </tspan>
+<tspan x="10" y="1882">  │ ├─┬ normalize-package-data@2.3.6 </tspan>
+<tspan x="10" y="1898">  │ │ ├── hosted-git-info@2.4.2 </tspan>
+<tspan x="10" y="1914">  │ │ ├─┬ is-builtin-module@1.0.0 </tspan>
+<tspan x="10" y="1930">  │ │ │ └── builtin-modules@1.1.1 </tspan>
+<tspan x="10" y="1946">  │ │ └─┬ validate-npm-package-license@3.0.1 </tspan>
+<tspan x="10" y="1962">  │ │   ├─┬ spdx-correct@1.0.2 </tspan>
+<tspan x="10" y="1978">  │ │   │ └── spdx-license-ids@1.2.2 </tspan>
+<tspan x="10" y="1994">  │ │   └── spdx-expression-parse@1.0.4 </tspan>
+<tspan x="10" y="2010">  │ ├─┬ read-pkg-up@1.0.1 </tspan>
+<tspan x="10" y="2026">  │ │ ├─┬ find-up@1.1.2 </tspan>
+<tspan x="10" y="2042">  │ │ │ └── path-exists@2.1.0 </tspan>
+<tspan x="10" y="2058">  │ │ └─┬ read-pkg@1.1.0 </tspan>
+<tspan x="10" y="2074">  │ │   ├─┬ load-json-file@1.1.0 </tspan>
+<tspan x="10" y="2090">  │ │   │ └─┬ strip-bom@2.0.0 </tspan>
+<tspan x="10" y="2106">  │ │   │   └── is-utf8@0.2.1 </tspan>
+<tspan x="10" y="2122">  │ │   └── path-type@1.1.0 </tspan>
+<tspan x="10" y="2138">  │ ├─┬ redent@1.0.0 </tspan>
+<tspan x="10" y="2154">  │ │ └─┬ strip-indent@1.0.1 </tspan>
+<tspan x="10" y="2170">  │ │   └── get-stdin@4.0.1 </tspan>
+<tspan x="10" y="2186">  │ └── trim-newlines@1.0.0 </tspan>
+<tspan x="10" y="2202">  ├─┬ read-pkg-up@2.0.0 </tspan>
+<tspan x="10" y="2218">  │ ├─┬ find-up@2.1.0 </tspan>
+<tspan x="10" y="2234">  │ │ └─┬ locate-path@2.0.0 </tspan>
+<tspan x="10" y="2250">  │ │   ├─┬ p-locate@2.0.0 </tspan>
+<tspan x="10" y="2266">  │ │   │ └── p-limit@1.1.0 </tspan>
+<tspan x="10" y="2282">  │ │   └── path-exists@3.0.0 </tspan>
+<tspan x="10" y="2298">  │ └─┬ read-pkg@2.0.0 </tspan>
+<tspan x="10" y="2314">  │   ├─┬ load-json-file@2.0.0 </tspan>
+<tspan x="10" y="2330">  │   │ ├─┬ parse-json@2.2.0 </tspan>
+<tspan x="10" y="2346">  │   │ │ └─┬ error-ex@1.3.1 </tspan>
+<tspan x="10" y="2362">  │   │ │   └── is-arrayish@0.2.1 </tspan>
+<tspan x="10" y="2378">  │   │ └── strip-bom@3.0.0 </tspan>
+<tspan x="10" y="2394">  │   └── path-type@2.0.0 </tspan>
+<tspan x="10" y="2410">  ├─┬ rxjs@5.3.0 </tspan>
+<tspan x="10" y="2426">  │ └── symbol-observable@1.0.4 </tspan>
+<tspan x="10" y="2442">  ├── semver@5.3.0 </tspan>
+<tspan x="10" y="2458">  ├── split@1.0.0 </tspan>
+<tspan x="10" y="2474">  ├── stream-to-observable@0.2.0 </tspan>
+<tspan x="10" y="2490">  └─┬ update-notifier@2.1.0 </tspan>
+<tspan x="10" y="2506">    ├─┬ boxen@1.0.0 </tspan>
+<tspan x="10" y="2522">    │ ├─┬ ansi-align@1.1.0 </tspan>
+<tspan x="10" y="2538">    │ │ └─┬ string-width@1.0.2 </tspan>
+<tspan x="10" y="2554">    │ │   └── is-fullwidth-code-point@1.0.0 </tspan>
+<tspan x="10" y="2570">    │ ├── camelcase@4.1.0 </tspan>
+<tspan x="10" y="2586">    │ ├── cli-boxes@1.0.0 </tspan>
+<tspan x="10" y="2602">    │ ├─┬ term-size@0.1.1 </tspan>
+<tspan x="10" y="2618">    │ │ └─┬ execa@0.4.0 </tspan>
+<tspan x="10" y="2634">    │ │   ├── cross-spawn-async@2.2.5 </tspan>
+<tspan x="10" y="2650">    │ │   ├── npm-run-path@1.0.0 </tspan>
+<tspan x="10" y="2666">    │ │   └── path-key@1.0.0 </tspan>
+<tspan x="10" y="2682">    │ └─┬ widest-line@1.0.0 </tspan>
+<tspan x="10" y="2698">    │   └─┬ string-width@1.0.2 </tspan>
+<tspan x="10" y="2714">    │     └── is-fullwidth-code-point@1.0.0 </tspan>
+<tspan x="10" y="2730">    ├─┬ configstore@3.0.0 </tspan>
+<tspan x="10" y="2746">    │ ├─┬ dot-prop@4.1.1 </tspan>
+<tspan x="10" y="2762">    │ │ └── is-obj@1.0.1 </tspan>
+<tspan x="10" y="2778">    │ ├── graceful-fs@4.1.11 </tspan>
+<tspan x="10" y="2794">    │ ├─┬ mkdirp@0.5.1 </tspan>
+<tspan x="10" y="2810">    │ │ └── minimist@0.0.8 </tspan>
+<tspan x="10" y="2826">    │ ├─┬ unique-string@1.0.0 </tspan>
+<tspan x="10" y="2842">    │ │ └── crypto-random-string@1.0.0 </tspan>
+<tspan x="10" y="2858">    │ └─┬ write-file-atomic@1.3.1 </tspan>
+<tspan x="10" y="2874">    │   ├── imurmurhash@0.1.4 </tspan>
+<tspan x="10" y="2890">    │   └── slide@1.1.6 </tspan>
+<tspan x="10" y="2906">    ├── is-npm@1.0.0 </tspan>
+<tspan x="10" y="2922">    ├─┬ latest-version@3.1.0 </tspan>
+<tspan x="10" y="2938">    │ └─┬ package-json@4.0.1 </tspan>
+<tspan x="10" y="2954">    │   ├─┬ got@6.7.1 </tspan>
+<tspan x="10" y="2970">    │   │ ├─┬ create-error-class@3.0.2 </tspan>
+<tspan x="10" y="2986">    │   │ │ └── capture-stack-trace@1.0.0 </tspan>
+<tspan x="10" y="3002">    │   │ ├── duplexer3@0.1.4 </tspan>
+<tspan x="10" y="3018">    │   │ ├── is-redirect@1.0.0 </tspan>
+<tspan x="10" y="3034">    │   │ ├── is-retry-allowed@1.1.0 </tspan>
+<tspan x="10" y="3050">    │   │ ├── lowercase-keys@1.0.0 </tspan>
+<tspan x="10" y="3066">    │   │ ├── safe-buffer@5.0.1 </tspan>
+<tspan x="10" y="3082">    │   │ ├── timed-out@4.0.1 </tspan>
+<tspan x="10" y="3098">    │   │ ├── unzip-response@2.0.1 </tspan>
+<tspan x="10" y="3114">    │   │ └─┬ url-parse-lax@1.0.0 </tspan>
+<tspan x="10" y="3130">    │   │   └── prepend-http@1.0.4 </tspan>
+<tspan x="10" y="3146">    │   ├─┬ registry-auth-token@3.1.2 </tspan>
+<tspan x="10" y="3162">    │   │ └─┬ rc@1.2.1 </tspan>
+<tspan x="10" y="3178">    │   │   ├── deep-extend@0.4.1 </tspan>
+<tspan x="10" y="3194">    │   │   ├── ini@1.3.4 </tspan>
+<tspan x="10" y="3210">    │   │   └── strip-json-comments@2.0.1 </tspan>
+<tspan x="10" y="3226">    │   └── registry-url@3.1.0 </tspan>
+<tspan x="10" y="3242">    ├── lazy-req@2.0.0 </tspan>
+<tspan x="10" y="3258">    ├── semver-diff@2.1.0 </tspan>
+<tspan x="10" y="3274">    └── xdg-basedir@3.0.0</tspan>
 </text>
 </svg>

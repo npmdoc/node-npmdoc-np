@@ -51,7 +51,7 @@
 
         href="https://github.com/sindresorhus/np#readme"
 
-    >np (v2.13.1)</a>
+    >np (v2.13.2)</a>
 </h1>
 <h4>A better `npm publish`</h4>
 <div class="apidocSectionDiv"><a
@@ -60,6 +60,15 @@
 ><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.np">module np</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.np.np">
+            function <span class="apidocSignatureSpan"></span>np
+            <span class="apidocSignatureSpan">(input, opts)</span>
+            </a>
+
+        </li>
 
         <li>
 
@@ -164,6 +173,106 @@
 <h1><a href="#apidoc.module.np" id="apidoc.module.np">module np</a></h1>
 
 
+    <h2>
+        <a href="#apidoc.element.np.np" id="apidoc.element.np.np">
+        function <span class="apidocSignatureSpan"></span>np
+        <span class="apidocSignatureSpan">(input, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(input, opts) =&#x3e; {
+	input = input || &#x27;patch&#x27;;
+
+	opts = Object.assign({
+		cleanup: true,
+		publish: true,
+		yarn: hasYarn()
+	}, opts);
+
+	if (!hasYarn() &#x26;&#x26; opts.yarn) {
+		throw new Error(&#x27;Could not use Yarn without yarn.lock file&#x27;);
+	}
+
+	// TODO: remove sometime far in the future
+	if (opts.skipCleanup) {
+		opts.cleanup = false;
+	}
+
+	const runTests = !opts.yolo;
+	const runCleanup = opts.cleanup &#x26;&#x26; !opts.yolo;
+	const runPublish = opts.publish;
+	const pkg = util.readPkg();
+
+	const tasks = new Listr([
+		{
+			title: &#x27;Prerequisite check&#x27;,
+			task: () =&#x3e; prerequisiteTasks(input, pkg, opts)
+		},
+		{
+			title: &#x27;Git&#x27;,
+			task: () =&#x3e; gitTasks(opts)
+		}
+	], {
+		showSubtasks: false
+	});
+
+	if (runCleanup) {
+		tasks.add([
+			{
+				title: &#x27;Cleanup&#x27;,
+				task: () =&#x3e; del(&#x27;node_modules&#x27;)
+			},
+			{
+				title: &#x27;Installing dependencies using Yarn&#x27;,
+				enabled: () =&#x3e; opts.yarn === true,
+				task: () =&#x3e; exec(&#x27;yarn&#x27;, [&#x27;install&#x27;])
+			},
+			{
+				title: &#x27;Installing dependencies using npm&#x27;,
+				enabled: () =&#x3e; opts.yarn === false,
+				task: () =&#x3e; exec(&#x27;npm&#x27;, [&#x27;install&#x27;])
+			}
+		]);
+	}
+
+	if (runTests) {
+		tasks.add({
+			title: &#x27;Running tests&#x27;,
+			task: () =&#x3e; exec(&#x27;npm&#x27;, [&#x27;test&#x27;])
+		});
+	}
+
+	tasks.add({
+		title: &#x27;Bumping version&#x27;,
+		task: () =&#x3e; exec(&#x27;npm&#x27;, [&#x27;version&#x27;, input])
+	});
+
+	if (runPublish) {
+		tasks.add({
+			title: &#x27;Publishing package&#x27;,
+			skip: () =&#x3e; {
+				if (pkg.private) {
+					return &#x27;Private package: not publishing to npm.&#x27;;
+				}
+			},
+			task: () =&#x3e; exec(&#x27;npm&#x27;, [&#x27;publish&#x27;].concat(opts.tag ? [&#x27;--tag&#x27;, opts.tag] : []))
+		});
+	}
+
+	tasks.add({
+		title: &#x27;Pushing tags&#x27;,
+		task: () =&#x3e; exec(&#x27;git&#x27;, [&#x27;push&#x27;, &#x27;--follow-tags&#x27;])
+	});
+
+	return tasks.run()
+		.then(() =&#x3e; readPkgUp())
+		.then(result =&#x3e; result.pkg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
 
 
 
@@ -259,12 +368,12 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">version =&#x3e; exports.PRERELEASE_VERSIONS.indexOf(version) !== -1 || Boolean(semver.prerelease(version))</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-					throw new Error(`New version \`${newVersion}\` should be higher than current version \`${pkg.version}\``);
 				}
 			}
 		},
 		{
 			title: &#x27;Check for pre-release version&#x27;,
+			enabled: () =&#x3e; opts.publish,
 			task: () =&#x3e; {
 				if (!pkg.private &#x26;&#x26; version.<span class="apidocCodeKeywordSpan">isPrereleaseVersion</span>(newVersion) &#x26;&#x26
 ; !opts.tag) {
@@ -339,7 +448,7 @@ module.exports = (input, pkg, opts) =&#x3e; {
 		},
 		{
 			title: &#x27;Check for pre-release version&#x27;,
-			task: () =&#x3e; {
+			enabled: () =&#x3e; opts.publish,
 ...</pre></li>
     </ul>
 
